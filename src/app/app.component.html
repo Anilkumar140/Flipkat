@@ -102,7 +102,7 @@
           </a>
         </li >
         <li class="nav-item">
-         <a class="nav-link" ><img class="circular--square" src="/assets/galaxy.jpg"  (click)="getDate()" style='width: 20px; height:20px'data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">&nbsp;<font color="white">Profile</font></a>
+         <a class="nav-link" ><img class="circular--square" [src]="picture" (click)="getDate()" style='width: 20px; height:20px'data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">&nbsp;<font color="white">{{nickname}}</font></a>
         </li>
         </ul>
     </div>

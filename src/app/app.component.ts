@@ -22,6 +22,7 @@ export class AppComponent {
 getDate(){
 this.authService.otpAuth();
 this.nickname=localStorage.getItem('nickname');
+this.picture=localStorage.getItem('picture');
 }
 
 }

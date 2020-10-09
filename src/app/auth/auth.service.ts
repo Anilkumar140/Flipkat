@@ -89,7 +89,7 @@ export class AuthService {
   }
   otpAuth(){
     localStorage.setItem('nickname',this.userProfile.nickname);
-    localStorage.setItem('picture',this.userProfile.nickname);
+    localStorage.setItem('picture',this.userProfile.picture);
     console.log(this.userProfile.picture)
     
 }
