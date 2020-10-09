@@ -88,7 +88,8 @@ export class AuthService {
     return Date.now() < this.expiresAt && this.authenticated;
   }
   otpAuth(){
-    console.log(this.userProfile.nickname);
+    localStorage.setItem('nickname',this.userProfile.nickname);
+    localStorage.setItem('picture',this.userProfile.nickname);
     console.log(this.userProfile.picture)
     
 }

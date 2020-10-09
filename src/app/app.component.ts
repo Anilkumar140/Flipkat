@@ -14,12 +14,14 @@ export class AppComponent {
   @Input()
   inputdata:any;
   isCollapsed = false;
-
+  nickname:any;
+  picture:any;
   constructor(public authService: AuthService) { }
 
 
 getDate(){
 this.authService.otpAuth();
+this.nickname=localStorage.getItem('nickname');
 }
 
 }
